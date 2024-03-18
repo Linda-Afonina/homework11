@@ -24,7 +24,7 @@ public class Main {
 
     // Метод для Задачи 1.
     public static void checkLeapYear(int leapYear) {
-        if (leapYear % 4 == 0 && leapYear % 100 !=0 || leapYear % 400 == 0) {
+        if (leapYear % 4 == 0 && leapYear % 100 != 0 || leapYear % 400 == 0) {
             System.out.println(leapYear + " год — високосный год");
         } else {
             System.out.println(leapYear + "  год — невисокосный год");
@@ -35,17 +35,13 @@ public class Main {
     public static void downloadAppVersion(int year, int os) {
         if (year == LocalDate.now().getYear() && os == 0) {
             System.out.println("Установите обычную версию приложения для IOS по ссылке");
-        }
-        else if (year < LocalDate.now().getYear() && os == 0) {
+        } else if (year < LocalDate.now().getYear() && os == 0) {
             System.out.println("Установите облегченную версию приложения для IOS по ссылке");
-    }
-        else if (year == LocalDate.now().getYear() && os == 1) {
+        } else if (year == LocalDate.now().getYear() && os == 1) {
             System.out.println("Установите обычную версию приложения для Android по ссылке");
-        }
-        else if (year < LocalDate.now().getYear() && os == 1) {
+        } else if (year < LocalDate.now().getYear() && os == 1) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        }
-        else {
+        } else {
             System.out.println("Вы ввели некорректные данные");
         }
     }
@@ -54,14 +50,11 @@ public class Main {
     public static int checkDelivery(int distance) {
         if (distance < 20 && distance >= 0) {
             return 1;
-        }
-        else if (distance >= 20 && distance <= 60) {
+        } else if (distance >= 20 && distance <= 60) {
             return 2;
-        }
-        else if (distance > 60 && distance <= 100) {
+        } else if (distance > 60 && distance <= 100) {
             return 3;
-        }
-        else {
+        } else {
             return -1;
         }
     }
